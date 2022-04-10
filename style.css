@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+/*Barvy:
+Pozadi stranky - #FAFAFA
+Černá - #000000
+Šedá - #8B8B8B
+Bíla - #FFFFFF
+#407BFF1F
+Primární modra - #407BFF
+
+*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fafafa;
+}
+.content {
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.hero {
+  /* background-image: url(images/happy-traveler.svg);*/
+  background-repeat: no-repeat;
+  /*background-position: center;*/
+  /*background-size: cover;*/
+  width: 350px;
+}
+.btn {
+  color: #fff;
+  padding: 11px 30px;
+  border-radius: 20px;
+  border: none;
+}
+.btn1 {
+  background-color: #407bff;
+}
+.btn2 {
+  background-color: #8b8b8b;
+  margin-top: 10px;
+}
+.services-agency .services {
+  display: flex;
+}
+
+.services-onsite .services {
+  display: flex;
+}
+.services {
+  background-color: #fff;
+  margin-bottom: 1px;
+}
