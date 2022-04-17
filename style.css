@@ -1,3 +1,12 @@
+/*Barvy:
+Pozadi stranky - #FAFAFA
+Černá - #000000
+Šedá - #8B8B8B
+Bíla - #FFFFFF
+Primární modra - #407BFF
+#407BFF1F
+*/
+
 html {
   box-sizing: border-box;
 }
@@ -6,53 +15,36 @@ html {
 ::after {
   box-sizing: inherit;
 }
-
-/*Barvy:
-Pozadi stranky - #FAFAFA
-Černá - #000000
-Šedá - #8B8B8B
-Bíla - #FFFFFF
-#407BFF1F
-Primární modra - #407BFF
-
-*/
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #fafafa;
 }
 .content {
-  max-width: 500px;
   margin-right: auto;
   margin-left: auto;
-  margin: 0;
   text-align: center;
   padding: 20px;
-}
-.hero {
-  /* background-image: url(images/happy-traveler.svg);*/
-  background-repeat: no-repeat;
-  /*background-position: center;*/
-  /*background-size: cover;*/
-  /*width: 350px;*/
 }
 .hero img {
   width: 350px;
 }
-
 .text h1 {
   font-size: 28px;
+  margin-bottom: 30px;
+  margin-top: 40px;
 }
-
+.text h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  border-bottom: 2px solid #407bff;
+  margin: 10px auto 0 auto;
+}
 .text p {
   font-size: 16px;
   color: #8b8b8b;
+  margin: 0 0 30px 0;
 }
-/* .hero h1 {
-  text-align: center;
-}
-.hero p {
-  text-align: center;
-} */
 .btn {
   color: #fff;
   font-size: 14px;
@@ -61,6 +53,7 @@ body {
   border: none;
   display: block;
   margin: auto;
+  cursor: pointer;
 }
 .btn1 {
   background-color: #407bff;
@@ -69,37 +62,38 @@ body {
   background-color: #8b8b8b;
   margin-top: 10px;
 }
-.services-agency .services {
-  display: flex;
-}
-
+.services-agency .services,
 .services-onsite .services {
   display: flex;
+  align-items: center;
 }
 .container-agency h2,
 .container-onsite h2 {
   font-size: 16px;
+  margin: 60px 0 0 0;
 }
 .container-agency p,
 .container-onsite p {
   font-size: 16px;
   color: #8b8b8b;
+  margin: 15px 0 30px 0;
 }
 .services {
   background-color: #fff;
-  margin-bottom: 1px;
+  margin: 0 auto 15px auto;
   border-radius: 10px;
+  box-shadow: 0px 4px 6px #407bff1f;
+  padding: 20px;
   width: 100%;
-  margin: 20px;
 }
 .services img {
   width: 40px;
   height: 45px;
-  margin-left: 20px;
-  margin-right: 29px;
 }
 .services p {
-  text-align: center;
+  font-size: 13px;
+  padding-left: 29px;
+  margin: 0;
 }
 
 @media screen and (min-width: 640px) {
@@ -146,7 +140,6 @@ body {
   .text p {
     margin: 0 0 30px 0;
   }
-
   .container-agency {
     display: flex;
   }
