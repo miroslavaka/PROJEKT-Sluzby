@@ -159,7 +159,6 @@ body {
   }
   .hero img {
     width: 100%;
-    max-width: 550px;
     order: 2;
     margin-left: 95px;
   }
